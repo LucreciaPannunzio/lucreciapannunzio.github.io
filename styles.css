@@ -1,0 +1,1802 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@media screen and (min-width: 1280px) {
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    /*Header*/
+    .header {
+        background-color: #d9dfdf;
+        width: 100%;
+        height: 150px;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-container {
+       display: flex;
+       margin: auto;
+       padding: 50px;
+       width: 100%;
+       margin-left: 90px;
+    }
+    
+    .nav-link {
+        text-decoration: none;
+        color: #143d49;
+        margin-left: 70px;
+        padding: 80px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-weight: 500;
+        font-size: 1.1em;
+        height: 40px;
+    }
+    .nav-link:hover{
+        text-decoration:underline;
+    }
+    
+    .img-logo {
+        width: 50%;
+        margin-left: 60px;
+    }
+    
+    /*Contenedor Main*/
+    .contenedorMain {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+            "img img experiencias"
+            "img img experiencias"
+            "video nosotros nosotros";
+    }
+    
+    /*Imagenes*/
+    .card-main {
+        grid-area: img;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    
+    .card-container {
+        height: 350px;
+        width: 350px;
+        background-color: #ebf0f0;
+        margin: 10px;
+        margin-left: 10px;
+        opacity: .8;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+        transition: all 1s;
+    }
+    
+    /*Animacion*/
+    .card-container:hover {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.1); 
+    }
+    
+    .card-cont-img {
+        height: 240px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .card-img {
+        width: 280px;
+        height: 240px;
+    }
+    
+    .card-cont-text {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .card-text {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.2em;
+    }
+    
+    /*Experiencias*/
+    .exp-container {
+        background-color: #f4f8f8;
+        grid-area: experiencias;
+        margin-top: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+        width: 95%;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+    }
+    
+    .exp-title {
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align: center;
+        font-size: 1.1em;
+        margin: 10px;
+        margin-top: 60px;
+        padding: 10px;
+    }
+    
+    .exp {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.3em;
+        width: 100%;
+    }
+    
+    .style-a {
+        background-color: #d9dfdf;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+        padding: 30px;
+        margin: 40px 40px;
+    }
+    
+    .style-b {
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+        padding: 30px;
+        margin: 40px 40px;
+    }
+
+    .img-previaje {
+        width: 450px;
+        height: 60px;
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+    
+    /*iframe*/
+    .video {
+        height: auto;
+        grid-area: video;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+
+    .iframe-video {
+        width: 410px;
+        height: 350px;
+    }
+    
+    /*Quiénes somos*/
+    .nosotros-container {
+        grid-area: nosotros;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+        margin-left: 120px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #f4f8f8;
+        height: 350px;
+        width: 85%;
+    }
+    
+    .nosotros-title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .nosotros-info {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.2em;
+        text-align: center;
+        line-height: 1.5;
+    }
+    
+    
+    
+    /*Footer*/
+    .footer {
+        width: 100%;
+        background-color: #d9dfdf;
+        padding: 20px;
+        margin-bottom: 10px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1em;
+        letter-spacing: 1px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+            "title title"
+            "contactanos redes"
+            "contactanos redes";
+    }
+    
+    .footer-title {
+        margin-top: 10px;
+        grid-area: title;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.4em;
+    }
+    
+    .footer-contact {
+        grid-area: contactanos;
+        margin-left: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 3rem;
+        font-size: 1.2em;
+    }
+    
+    .footer-contact-link {
+        text-decoration: underline;
+        color: #143d49;
+    }
+    .footer-contact-link:hover {
+        background-color: #143d49;
+        color:#ebf0f0;
+    }
+    
+    .footer-redes {
+        grid-area: redes;
+    }
+    
+    .footer-redes-list {
+        list-style: none;
+        display: flex;
+    }
+    
+    .redes-li {
+        margin-right: auto;
+        margin-top: 50px;
+        color:#143d49;
+        font-size: 1.5rem;
+    }
+    
+    
+    
+    /*Sección Excursiones*/
+    .exc-container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        justify-content:space-around;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    
+    .exc-card {
+        height: 500px;
+        width: 400px;
+        background-color: #ebf0f0;
+        padding: 20px;
+        padding: 8px;
+        margin: 8px;
+        opacity: .8;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+        transition: all 1s;
+    }
+    .exc-card:hover {
+        opacity: 1;
+    }
+    
+    .exc-card-img {
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .card-img {
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+    }
+    
+    .exc-cont-text {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; 
+    }
+    
+    .exc-text {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.3em; 
+        text-align: center;
+    }
+    
+    .exc-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    #button-arrayanes{
+        margin-top: 30px;
+    }
+    
+    #button-puerto{
+        margin-top: 30px;
+    }
+    
+    .button-info {
+        font-size: 1em;
+        padding: 12px;
+        font-weight: 200;
+        background-color: #1A3C40;
+        border: none;
+        border-radius: 5px;
+    }
+    .button-info:hover{
+        background-color: #d8dbdb;   
+    }
+    
+    .link-exc {
+        text-decoration: none;
+        color: #d8dbdb;
+    }
+    .link-exc:hover{
+        color: #1A3C40;
+    }
+    
+    
+    /*Sección Contacto*/
+    .contact {
+        display: flex;
+        justify-content: center;
+        line-height: 50px;
+    }
+    
+    .form-contact {
+        background-color: #ebf0f0;
+        margin: 50px;
+        padding: 50px;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        width: 50%;
+        border: #101414 double 2px;
+        font-size: 1em;
+    }
+    
+    .contact-input {
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 1.2em;
+    }
+    
+    .input-text {
+        font-family: 'Source Sans Pro', sans-serif;
+        width: 50%;
+        height: 40px;
+        padding-left: 10px;
+        line-height: 3;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: .6em;
+    }
+    
+    .input-consulta {
+        font-family: 'Source Sans Pro', sans-serif;
+        width: 60%;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: .6em;   
+    }
+    
+    .buttons-cont {
+        text-align: center;
+    }
+    
+    .contact-button {
+        background-color: #1A3C40;
+        color:#d8dbdb;
+        font-size: .9em;
+        width: 100px;
+        height: 40px;
+        margin-bottom: 20px;
+        margin: 20px;
+    }
+    
+    .button-reset:hover{
+        background-color: #d8d7d0;
+        color:#101414;
+    }
+    
+    .button-send:hover{
+        background-color: #d8d7d0;
+        color:#101414;
+    }
+    
+    
+    
+    /*EXCURSIONES*/
+    /*7 LAGOS*/
+    .detail-container {
+        height: auto;
+        width: 100%;
+        display: grid;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+            "img-container info info"
+            "img-container info info"
+            "img-container info info";
+    }
+    
+    .img-container {
+        grid-area: img-container;
+        margin-top: 120px;
+    }
+    
+    .img-exc {
+        width: 250px;
+        padding: 40px;
+        opacity: .9;
+        transition: all 1s;
+    }
+    .img-exc:hover {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.1); 
+    }
+    
+    .info {
+        grid-area: info;
+        height: 580px;
+        border:#101414 1px solid;
+        margin-top: 60px;
+        margin-right: 20px;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+    }
+    
+    .title {
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .exc-title {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #143d49;
+    }
+    
+    .detail {
+        padding: 30px;
+    }
+    
+    .detail-info {
+        font-size: 1.2em;
+        text-align: justify;
+    }
+    
+    .reserva {
+        display: flex;
+        justify-content: center;
+        font-size: 1em;
+        margin-top: 70px;
+    }
+    
+    .button-reserva {
+        opacity: .9;
+        font-size: 1.2em;
+        padding: 10px;
+        background-color: #1A3C40;
+        color:#d8dbdb;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+    }
+    .button-reserva:hover {
+        background-color: #d8dbdb;
+        color: #1A3C40;
+    }
+    
+    /*CANAL BEAGLE*/
+    #reserva-beagle {
+        margin-top: 40px;
+    }
+    
+    #img-container-beagle {
+        margin-top: 130px;
+    }
+    
+    /*CRUCE DE LOS ANDES*/
+    #reserva-andes {
+        margin-top: 55px;
+    }
+    
+    #img-container-andes {
+        margin-top: 120px;
+    }
+    
+    /*ISCHIGUALASTO Y TALAMPAYA*/
+    #reserva-ischigualasto {
+        margin-top: 40px;
+    }
+    
+    #img-container-ischi {
+        margin-top: 100px;
+    }
+    
+    /*ISLA VICTORIA Y BOSQUE DE ARRAYANES*/
+    #reserva-arrayanes {
+        margin-top: 40px;
+    }
+    
+    #img-container-arrayanes {
+        margin-top: 100px;
+    }
+    
+    /*PENÍNSULA VALDÉS*/
+    #reserva-peninsula {
+        margin-top: 1px;
+    }
+    
+    #img-container-peninsula {
+        margin-top: 90px;
+    }
+    
+    /*PERITO MORENO*/
+    #img-container-perito {
+        margin-top: 110px;
+    }
+
+    #reserva-perito {
+        margin-top: 50px;
+    }
+    
+    /*PUERTO BLEST*/
+    #img-container-puerto {
+        margin-top: 140px;
+    }
+    
+    #info-puerto {
+        margin-top: 100px;
+    }
+    
+    #reserva-puerto {
+        margin-top: 25px;
+    }
+    
+    /*CATARATAS*/
+    #img-container-cataratas {
+        margin-top: 110px;
+    }
+    
+    #reserva-cataratas {
+        margin-top: 10px;
+    }
+    
+    #info-cataratas {
+        height: 620px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    /*Header*/
+    .header {
+        background-color: #d9dfdf;
+        width: 90%;
+        height: 150px;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-container {
+       display: flex;
+       margin: auto;
+       padding: 50px;
+       width: 100%;
+       margin-left: 10px;
+    }
+    
+    .nav-link {
+        text-decoration: none;
+        color: #143d49;
+        margin-left: 30px;
+        padding: 5px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-weight: 500;
+        font-size: 1.1em;
+        height: 40px;
+    }
+    .nav-link:hover{
+        text-decoration:underline;
+    }
+    
+    .img-logo {
+        width: 50%;
+        margin-left: 50px;
+    }
+    
+    /*Contenedor Main*/
+    .contenedorMain {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+            "img img"
+            "experiencias experiencias"
+            "video video"
+            "nosotros nosotros";
+    }
+    
+    /*Imagenes*/
+    .card-main {
+        grid-area: img;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        width: 50%;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    .card-container {
+        height: 270px;
+        width: 250px;
+        background-color: #ebf0f0;
+        margin: 5px;
+        margin-left: 10px;
+        opacity: .8;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+        transition: all 1s;
+    }
+    
+    /*Animacion*/
+    .card-container:hover {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.1); 
+    }
+    
+    .card-cont-img {
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .card-img {
+        width: 200px;
+        height: 180px;
+    }
+    
+    .card-cont-text {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .card-text {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.1em;
+        text-align: center;
+    }
+    
+    /*Experiencias*/
+    .exp-container {
+        background-color: #f4f8f8;
+        grid-area: experiencias;
+        margin-top: 30px;
+        width: 60%;
+        margin-left: 20px;
+        height: 1300px;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+    }
+    
+    .exp-title {
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align: center;
+        font-size: 1em;
+        margin: 10px;
+        margin-top: 30px;
+        padding: 10px;
+    }
+    
+    .exp {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.1em;
+        width: 100%;
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(5, auto);
+    }
+    
+    .style-a {
+        background-color: #d9dfdf;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+        width: 60%;
+        padding: 20px;
+        margin-bottom: 50px;
+        margin-left: 110px;
+    }
+    
+    .style-b {
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+        width: 60%;
+        padding: 20px;
+        margin-left: 110px;
+        margin-bottom: 50px;
+    }
+
+    .img-previaje {
+        display: none;
+    }
+    
+    /*iframe*/
+    .video {
+        height: auto;
+        grid-area: video;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 40px;
+    }
+
+    .iframe-video {
+        height: 350px;
+        width: 500px;
+    }
+    
+    /*Quiénes somos*/
+    .nosotros-container {
+        grid-area: nosotros;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+        margin-left: 10px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #f4f8f8;
+        height: 470px;
+        width: 80%;
+    }
+    
+    .nosotros-title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .nosotros-info {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.3em;
+        text-align: center;
+        line-height: 1.5;
+    }
+    
+    /*Footer*/
+    .footer {
+        width: 100%;
+        background-color: #ebf0f0;
+        padding: 10px;
+        margin-bottom: 5px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: .9em;
+        letter-spacing: 1px;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+            "title"
+            "contactanos"
+            "redes";
+    }
+    
+    .footer-title {
+        margin-top: 10px;
+        margin-right: 10px;
+        grid-area: title;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+    
+    .footer-contact {
+        width: 80%;
+        grid-area: contactanos;
+        margin-left: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 2em;
+        font-size: 1.2em;
+    }
+    
+    .footer-contact-link {
+        text-decoration: underline;
+        color: #143d49;
+    }
+    .footer-contact-link:hover {
+        background-color: #143d49;
+        color:#ebf0f0;
+    }
+    
+    .footer-redes {
+        grid-area: redes;
+    }
+    
+    .footer-redes-list {
+        list-style: none;
+        display: flex; 
+    }
+    
+    .redes-li {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 150px;
+        color:#143d49;
+        font-size: 1.4rem;
+    }
+    
+    
+    
+    /*Sección Excursiones*/
+    .exc-container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        justify-content:space-around;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    
+    .exc-card {
+        height: 500px;
+        width: 400px;
+        background-color: #ebf0f0;
+        margin: 50px;
+        padding: 30px;
+        margin-left: 20px;
+        opacity: .8;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+        transition: all 1s;
+    }
+    .exc-card:hover {
+        opacity: 1;
+    }
+    
+    .exc-card-img {
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .card-img {
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+    }
+    
+    .exc-cont-text {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; 
+    }
+    
+    .exc-text {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.5em; 
+        text-align: center;
+    }
+    
+    .exc-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    #button-arrayanes{
+        margin-top: 30px;
+    }
+    
+    #button-puerto{
+        margin-top: 30px;
+    }
+    
+    .button-info {
+        font-size: 1.2em;
+        padding: 12px;
+        font-weight: bold;
+        background-color: #1A3C40;
+        border: none;
+        border-radius: 5px;
+    }
+    .button-info:hover{
+        background-color: #d8dbdb;   
+    }
+    
+    .link-exc {
+        text-decoration: none;
+        color: #d8dbdb;
+    }
+    .link-exc:hover{
+        color: #1A3C40;
+    }
+    
+    
+    /*Sección Contacto*/
+    .contact {
+        display: flex;
+        justify-content: center;
+        line-height: 50px;
+    }
+    
+    .form-contact {
+        background-color: #ebf0f0;
+        margin: 50px;
+        padding: 50px;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        width: 50%;
+        border: #101414 double 2px;
+        font-size: 1.1em;
+    }
+    
+    .contact-input {
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 1.2em;
+    }
+    
+    .input-text {
+        font-family: 'Source Sans Pro', sans-serif;
+        width: 50%;
+        height: 40px;
+        padding-left: 10px;
+        line-height: 3;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: .7em;
+    }
+    
+    .input-consulta {
+        font-family: 'Source Sans Pro', sans-serif;
+        width: 60%;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: .7em;   
+    }
+    
+    .buttons-cont {
+        text-align: center;
+    }
+    
+    .contact-button {
+        background-color: #2b2c2c;
+        color: #f7f6f1;
+        font-size: 1.1rem;
+        width: 100px;
+        height: 45px;
+        margin-bottom: 20px;
+        margin: 20px;
+    }
+    
+    .button-reset:hover{
+        background-color: #f7f6f1;
+        color:#101414;
+    }
+    
+    .button-send:hover{
+        background-color: #f7f6f1;
+        color:#101414;
+    }
+    
+    
+    
+    /*EXCURSIONES*/
+    /*7 LAGOS*/
+    .detail-container {
+        height: auto;
+        width: 100%;
+        display: grid;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+            "img-container . info info"
+            "img-container . info info"
+            "img-container . info info";
+    }
+    
+    .img-container {
+        grid-area: img-container;
+        margin-left: 50px;
+        margin-top: 90px;
+    }
+    
+    .img-exc {
+        width: 300px;
+        padding: 40px;
+    }
+    
+    .info {
+        grid-area: info;
+        height: 580px;
+        border:#101414 1px solid;
+        margin-top: 60px;
+        margin-right: 70px;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+    }
+    
+    .title {
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .exc-title {
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #143d49;
+    }
+    
+    .detail {
+        padding: 40px;
+    }
+    
+    .detail-info {
+        font-size: 1.4em;
+        text-align: justify;
+    }
+    
+    .reserva {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    .button-reserva {
+        font-size: 1.5em;
+        padding: 10px;
+        background-color: #1A3C40;
+        color:#d8dbdb;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+    }
+    .button-reserva:hover {
+        background-color: #d8dbdb;
+        color: #1A3C40;
+    }
+    
+    /*CANAL BEAGLE*/
+    #reserva-beagle {
+        margin-top: 1px;
+    }
+    
+    #img-container-beagle {
+        margin-top: 110px;
+    }
+    
+    /*CRUCE DE LOS ANDES*/
+    #reserva-andes {
+        margin-top: 25px;
+    }
+    
+    #img-container-andes {
+        margin-top: 120px;
+    }
+    
+    /*ISCHIGUALASTO Y TALAMPAYA*/
+    #reserva-ischigualasto {
+        margin-top: 1px;
+    }
+    
+    #img-container-ischi {
+        margin-top: 100px;
+    }
+    
+    /*ISLA VICTORIA Y BOSQUE DE ARRAYANES*/
+    #reserva-arrayanes {
+        margin-top: 1px;
+    }
+    
+    #img-container-arrayanes {
+        margin-top: 100px;
+    }
+    
+    /*PENÍNSULA VALDÉS*/
+    #reserva-peninsula {
+        margin-top: 1px;
+    }
+    
+    #img-container-peninsula {
+        margin-top: 90px;
+    }
+    
+    /*PERITO MORENO*/
+    #img-container-perito {
+        margin-top: 110px;
+    }
+
+    #reserva-perito {
+        margin-top: 10px;
+    }
+    
+    /*PUERTO BLEST*/
+    #img-container-puerto {
+        margin-top: 140px;
+    }
+    
+    #info-puerto {
+        margin-top: 100px;
+    }
+    
+    #reserva-puerto {
+        margin-top: 25px;
+    }
+    
+    /*CATARATAS*/
+    #img-container-cataratas {
+        margin-top: 110px;
+    }
+    
+    #reserva-cataratas {
+        margin-top: -40px;
+    }
+    
+    #info-cataratas {
+        height: 620px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    /*Header*/
+    .header {
+        background-color: #d9dfdf;
+        width: 100%;
+        height: 150px;
+        font-size: 1.3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-container {
+       background-color: #d9dfdf;
+       margin: auto;
+       padding: 30px;
+       width: 100%;
+       margin-left: 70px;
+    }
+    
+    .nav-link {
+        text-decoration: none;
+        color: #143d49;
+        margin-left: 30px;
+        padding: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-weight: 500;
+        font-size: 1.2em;
+        height: 40px;
+    }
+    .nav-link:hover{
+        text-decoration:underline;
+    }
+    
+    .img-logo {
+        width: 70%;
+        margin-left: 70px;
+    }
+    
+    /*Contenedor Main*/
+    .contenedorMain {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+            "img img"
+            "experiencias experiencias"
+            "video video"
+            "nosotros nosotros";
+    }
+    
+    /*Imagenes*/
+    .card-main {
+        grid-area: img;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        width: 50%;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    
+    .card-container {
+        height: 270px;
+        width: 250px;
+        background-color: #ebf0f0;
+        margin: 5px;
+        margin-left: 10px;
+        opacity: .8;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+        transition: all 1s;
+    }
+    
+    /*Animacion*/
+    .card-container:hover {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+        transform: scale(1.1); 
+    }
+    
+    .card-cont-img {
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .card-img {
+        width: 200px;
+        height: 180px;
+    }
+    
+    .card-cont-text {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .card-text {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.1em;
+        text-align: center;
+    }
+    
+    /*Experiencias*/
+    .exp-container {
+        background-color: #f4f8f8;
+        grid-area: experiencias;
+        margin-top: 30px;
+        width: 95%;
+        height: 1200px;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+    }
+    
+    .exp-title {
+        font-family: 'Source Sans Pro', sans-serif;
+        text-align: center;
+        font-size: 1em;
+        margin: 10px;
+        margin-top: 30px;
+        padding: 10px;
+    }
+    
+    .exp {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.1em;
+        width: 90%;
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(5, auto);
+    }
+    
+    .style-a {
+        background-color: #c2c0c0;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+        padding: 20px;
+        margin-left: 50px;
+        margin-bottom: 40px;
+    }
+    
+    .style-b {
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+        padding: 20px;
+        margin-left: 50px;
+        margin-bottom: 40px;
+    }
+
+    .img-previaje {
+        width: 400px;
+        margin-top: 8px;
+        margin-left: 60px;
+        padding-top: 50px;
+    }
+    
+    /*iframe*/
+    .video {
+        height: auto;
+        grid-area: video;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 40px;
+    }
+
+    .iframe-video {
+        height: 250px;
+        width: 450px;
+    }
+    
+    /*Quiénes somos*/
+    .nosotros-container {
+        grid-area: nosotros;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+        margin-left: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #f4f8f8;
+        height: 470px;
+        width: 90%;
+    }
+    
+    .nosotros-title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .nosotros-info {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.3em;
+        text-align: center;
+        line-height: 1.5;
+    }
+    
+   
+    
+    /*Footer*/
+    .footer {
+        width: 130%;
+        background-color: #ebf0f0;
+        padding: 10px;
+        margin-bottom: 5px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1em;
+        letter-spacing: 1px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+            "title title"
+            "contactanos contactanos"
+            "redes redes";
+    }
+    
+    .footer-title {
+        margin-top: 10px;
+        grid-area: title;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+    
+    .footer-contact {
+        grid-area: contactanos;
+        margin-left: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 3rem;
+        font-size: 1.3em;
+    }
+    
+    .footer-contact-link {
+        text-decoration: underline;
+        color: #143d49;
+    }
+    .footer-contact-link:hover {
+        background-color: #143d49;
+        color:#ebf0f0;
+    }
+    
+    .footer-redes {
+        grid-area: redes;
+    }
+    
+    .footer-redes-list {
+        list-style: none;
+        display: flex;
+    }
+    
+    .redes-li {
+        padding-left: 50px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 120px;
+        color:#143d49;
+        font-size: 1.5rem;
+    }
+    
+    
+    
+    /*Sección Excursiones*/
+    .exc-container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        justify-content:space-around;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+    
+    .exc-card {
+        height: 500px;
+        width: 400px;
+        background-color: #ebf0f0;
+        margin: 50px;
+        padding: 30px;
+        margin-left: 20px;
+        opacity: .8;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+        transition: all 1s;
+    }
+    .exc-card:hover {
+        opacity: 1;
+    }
+    
+    .exc-card-img {
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .card-img {
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+    }
+    
+    .exc-cont-text {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; 
+    }
+    
+    .exc-text {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.5em; 
+        text-align: center;
+    }
+    
+    .exc-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    #button-arrayanes{
+        margin-top: 30px;
+    }
+    
+    #button-puerto{
+        margin-top: 30px;
+    }
+    
+    .button-info {
+        font-size: 1.2em;
+        padding: 12px;
+        font-weight: bold;
+        background-color: #1A3C40;
+        border: none;
+        border-radius: 5px;
+    }
+    .button-info:hover{
+        background-color: #d8dbdb;   
+    }
+    
+    .link-exc {
+        text-decoration: none;
+        color: #d8dbdb;
+    }
+    .link-exc:hover{
+        color: #1A3C40;
+    }
+    
+    
+    /*Sección Contacto*/
+    .contact {
+        display: flex;
+        justify-content: center;
+        line-height: 50px;
+    }
+    
+    .form-contact {
+        background-color: #ebf0f0;
+        margin: 50px;
+        padding: 50px;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        width: 50%;
+        border: #101414 double 2px;
+        font-size: 1.1em;
+    }
+    
+    .contact-input {
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 1.2em;
+    }
+    
+    .input-text {
+        font-family: 'Source Sans Pro', sans-serif;
+        width: 50%;
+        height: 40px;
+        padding-left: 10px;
+        line-height: 3;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: .7em;
+    }
+    
+    .input-consulta {
+        font-family: 'Source Sans Pro', sans-serif;
+        width: 60%;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: .7em;   
+    }
+    
+    .buttons-cont {
+        text-align: center;
+    }
+    
+    .contact-button {
+        background-color: #2b2c2c;
+        color: #f7f6f1;
+        font-size: 1.1rem;
+        width: 100px;
+        height: 45px;
+        margin-bottom: 20px;
+        margin: 20px;
+    }
+    
+    .button-reset:hover{
+        background-color: #f7f6f1;
+        color:#101414;
+    }
+    
+    .button-send:hover{
+        background-color: #f7f6f1;
+        color:#101414;
+    }
+    
+    
+    
+    /*EXCURSIONES*/
+    /*7 LAGOS*/
+    .detail-container {
+        height: auto;
+        width: 100%;
+        display: grid;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+            "img-container . info info"
+            "img-container . info info"
+            "img-container . info info";
+    }
+    
+    .img-container {
+        grid-area: img-container;
+        margin-left: 50px;
+        margin-top: 90px;
+    }
+    
+    .img-exc {
+        width: 300px;
+        padding: 40px;
+    }
+    
+    .info {
+        grid-area: info;
+        height: 580px;
+        border:#101414 1px solid;
+        margin-top: 60px;
+        margin-right: 70px;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+    }
+    
+    .title {
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .exc-title {
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #143d49;
+    }
+    
+    .detail {
+        padding: 40px;
+    }
+    
+    .detail-info {
+        font-size: 1.4em;
+        text-align: justify;
+    }
+    
+    .reserva {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    .button-reserva {
+        font-size: 1.5em;
+        padding: 10px;
+        background-color: #1A3C40;
+        color:#d8dbdb;
+        box-shadow: #6d6b6b;
+        -webkit-box-shadow: 2px 2px 6px #6d6b6b;
+        -moz-box-shadow: 2px 2px 6px #6d6b6b;
+    }
+    .button-reserva:hover {
+        background-color: #d8dbdb;
+        color: #1A3C40;
+    }
+    
+    /*CANAL BEAGLE*/
+    #reserva-beagle {
+        margin-top: 1px;
+    }
+    
+    #img-container-beagle {
+        margin-top: 110px;
+    }
+    
+    /*CRUCE DE LOS ANDES*/
+    #reserva-andes {
+        margin-top: 25px;
+    }
+    
+    #img-container-andes {
+        margin-top: 120px;
+    }
+    
+    /*ISCHIGUALASTO Y TALAMPAYA*/
+    #reserva-ischigualasto {
+        margin-top: 1px;
+    }
+    
+    #img-container-ischi {
+        margin-top: 100px;
+    }
+    
+    /*ISLA VICTORIA Y BOSQUE DE ARRAYANES*/
+    #reserva-arrayanes {
+        margin-top: 1px;
+    }
+    
+    #img-container-arrayanes {
+        margin-top: 100px;
+    }
+    
+    /*PENÍNSULA VALDÉS*/
+    #reserva-peninsula {
+        margin-top: 1px;
+    }
+    
+    #img-container-peninsula {
+        margin-top: 90px;
+    }
+    
+    /*PERITO MORENO*/
+    #img-container-perito {
+        margin-top: 110px;
+    }
+
+    #reserva-perito {
+        margin-top: 10px;
+    }
+    
+    /*PUERTO BLEST*/
+    #img-container-puerto {
+        margin-top: 140px;
+    }
+    
+    #info-puerto {
+        margin-top: 100px;
+    }
+    
+    #reserva-puerto {
+        margin-top: 25px;
+    }
+    
+    /*CATARATAS*/
+    #img-container-cataratas {
+        margin-top: 110px;
+    }
+    
+    #reserva-cataratas {
+        margin-top: -40px;
+    }
+    
+    #info-cataratas {
+        height: 620px;
+    }
+}

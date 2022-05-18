@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/8d0c8e96ca.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="/img/logo.png">  
+    <title>Contacto</title>
+</head>
+<body>
+    <div class="contenedorPadre">
+        <header class="header">
+                <a href="/index.html"><img class="img-logo" src="/img/logo.png" alt="logo"></a>
+                <nav class="nav-container">    
+                    <a class="nav-link" href="/index.html">Inicio</a>
+                    <a class="nav-link" href="/Pages/excursiones.html">Excursiones</a>
+                    <a class="nav-link" href="contacto.html">Contacto</a>                   
+                </nav> 
+        </header>
+        <section class="contact">
+            <form action="" class="form-contact">
+                <div class="contact-input">
+                    <label for="name">Ingrese su nombre y apellido: </label>
+                    <input class="input-text" type="text" name="name" id="name" placeholder="Nombre y apellido" required>
+                </div>
+                <div class="contact-input">
+                    <label for="email">Ingrese su email: </label>
+                    <input class="input-text" type="email" name="email" id="email" placeholder="correo@correo.com" required>
+                    <span style="color:red" id="error-mail"></span>
+                </div>
+                <div class="contact-input">
+                    <label for="consulta">Ingrese su consulta: </label><br>
+                    <textarea class="input-consulta" name="consulta" id="consulta" cols="30" rows="10" placeholder="Escribe su consulta..."></textarea>
+                </div>
+                <div class="contact-input">
+                    <label for="novedades" class="input-novedades">¿Desea recibir novedades?</label>
+                    <input type="checkbox" name="novedades"/>
+                </div>
+                <div class="contact-input buttons-cont">
+                    <button type="button" class="contact-button button-reset">Reset</button>
+                    <button type="submit" class="contact-button button-send" id="click-button-send" onclick="sendForm()">Enviar</button>
+                </div>
+            </form>
+        </section>
+        <footer class="footer">
+            <h3 class="footer-title">Contactanos</h3>
+            <div class="footer-contact">
+                <p>Si tenés alguna consulta, no dudes en contactarte con nosotros.</p> 
+                <p>Igresá a nuestro <a class="footer-contact-link" href="/Pages/contacto.html">formulario de contacto</a>, y te responderemos a la brevedad.</p>
+            </div>
+            <div class="footer-redes">
+                <ul class="footer-redes-list">
+                    <li class="redes-li"><i class="fab fa-facebook-f"></i></li>
+                    <li class="redes-li"><i class="fab fa-instagram"></i></li>
+                    <li class="redes-li"><i class="fab fa-whatsapp"></i></li>
+                </ul>
+            </div>    
+        </footer>
+    </div>
+
+    <script src="/file.js"></script>
+</body>
+</html>
